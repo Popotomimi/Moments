@@ -1,18 +1,8 @@
 <h1>Moments</h1>
-<p>Alguma coisa</p>
-<div>
-  <a href="#">Clique aqui</a>
-</div>
-<app-first-component></app-first-component>
-<app-parent-data
-  [name]="userName"
-  [age]="age"
-  [information]="information"
-></app-parent-data>
-<app-directives></app-directives>
-<app-if-render></app-if-render>
-<app-eventos></app-eventos>
-<app-emitter></app-emitter>
-<app-list-render></app-list-render>
-<app-pipes></app-pipes>
-<app-two-way-binding></app-two-way-binding>
+<nav>
+  <a routerLink="/">Home</a> <br />
+  <a routerLink="/list">Lista</a> <br />
+  <a routerLink="/events">Eventos</a>
+</nav>
+<router-outlet></router-outlet>
+<footer>Footer</footer>
